@@ -1,10 +1,10 @@
 # autocorrect
-First assignment: exercises use of strings, arrays, file i/o.
+First assignment: exercises use of strings, arrays, and file i/o.
 
-The big picture is it will take a string and return an array of words from the dictionary that are the most likely matches for an autocorrecter. Specifically it will return the lowest "scoring" words of the same length. The score is the maximum distance between two corresponding letters from the original string and the candidate word. Distance between letters is calculated from the x-y coordinates of the keys representing those letters on an [iPhone keyboard](iPhoneKeyboard.png). These coordinates are recorded in the [keyCoordinates.txt](keyCoordinates.txt) file.
+The big picture of this assignment is to finish a program that will take a string and return an array of words from the given dictionary that are the most likely matches for an autocorrecter. Specifically it will return the lowest "scoring" words from the given dictionary that are the same length as the input string. The score is the maximum distance between the location of the corresponding letters from the input string and the candidate word. Distance between letters is calculated from the x-y coordinates of the keys representing those letters on an [iPhone keyboard](iPhoneKeyboard.png). These coordinates are given in the [keyCoordinates.txt](keyCoordinates.txt) file.
 
 ## Example distance calculation
-Our input string is "abc" and the dictionary word we are comparing to is "end".
+Our input string is "abc" and the dictionary word we are comparing it to is "end".
   * To calculate the letter distances:
     * a is (127, 259), e is (310, 91)
     * the distance between these points is sqrt((127-310)^2 + (259-91)^2) which is roughly 248.421
